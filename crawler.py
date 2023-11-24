@@ -1,6 +1,51 @@
 from bs4 import BeautifulSoup
+from urllib.request import urlopen
+from urllib.error import HTTPError
+from urllib.error import URLError
 import re
 
-bs = BeautifulSoup("<html> <head> <title>My first web page</title> </head> <body> <h1>My first web page</h1> <h2>What this is tutorial</h2> <p>A simple page put together using HTML. <em>I said a simple page.</em>.</p> <ul> <li>To learn HTML</li> <li> To show off <ol> <li>To my boss</li> <li>To my friends</li> <li>To my cat</li> <li>To the little talking duck in my brain</li> </ol> </li> <li>Because I have fallen in love with my computer and want to give her some HTML loving.</li> </ul> <h2>Where to find the tutorial</h2> <p><a href=\"http://www.aaa.com\"><img src=http://www.aaa.com/badge1.gif></a></p> <h3>Some random table</h3> <table> <tr class=\"tutorial1\"> <td>Row 1, cell 1</td> <td>Row 1, cell 2<img src=http://www.bbb.com/badge2.gif></td> <td>Row 1, cell 3</td> </tr> <tr class=\"tutorial2\"> <td>Row 2, cell 1</td> <td>Row 2, cell 2</td> <td>Row 2, cell 3<img src=http://www.ccc.com/badge3.gif></td> </tr> </table> </body> </html>", 'html.parser')
 
-print(bs.table.find_all('img'))
+
+def main():
+    # try:
+    #     html = urlopen('https://www.cpp.edu/sci/computer-science/')
+    # except HTTPError as e:
+    #     print(e)
+    # except URLError as e:
+    #     print('The server could not be found!')
+    # else:
+    #     print('It Worked!')
+
+    # bs = BeautifulSoup(html.read(), 'html.parser')
+    # print(bs)
+
+    frontier = ['https://www.cpp.edu/sci/computer-science/']
+    visitedURL = []
+
+    while frontier:
+        url = frontier.pop(0)
+        visitedURL.append(url)
+        html = urlopen(url)
+        storePage(url, html)
+        bs = BeautifulSoup(html.read(), 'html.parser')
+        if bs.find_all('h1', text = re.compile('.*Permanent Faculty.*')):
+            frontier = []
+        currentURL = bs.find_all('a', href=True)
+        print(currentURL)
+        for link in currentURL:
+            if link[0] == "/":
+                link = "https://www.cpp.edu" + link
+            elif link[0:4] != "https":
+                link = "https://www.cpp.edu/sci/computer-science/" + link
+            print(link)
+            if link not in visitedURL or link not in frontier:
+                frontier.append(link)
+
+        
+def storePage(url, html):
+    return
+        
+
+
+if __name__ == "__main__":
+    main()
