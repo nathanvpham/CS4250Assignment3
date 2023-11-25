@@ -5,7 +5,6 @@ from urllib.error import URLError
 import re
 
 
-
 def main():
     # try:
     #     html = urlopen('https://www.cpp.edu/sci/computer-science/')
@@ -29,17 +28,18 @@ def main():
         storePage(url, html)
         bs = BeautifulSoup(html.read(), 'html.parser')
         if bs.find_all('h1', text = re.compile('.*Permanent Faculty.*')):
-            frontier = []
-        currentURL = bs.find_all('a', href=True)
-        print(currentURL)
+            break
+        try:
+            currentURL = bs.find_all('a', href=True)
+        except:
+            continue
         for link in currentURL:
-            if link[0] == "/":
-                link = "https://www.cpp.edu" + link
-            elif link[0:4] != "https":
-                link = "https://www.cpp.edu/sci/computer-science/" + link
-            print(link)
-            if link not in visitedURL or link not in frontier:
-                frontier.append(link)
+            link = link.get('href')
+            if link[0] == "/" or link[0:4] == "http":
+                if link [0] == "/":
+                    link = "https://www.cpp.edu" + link
+                if link not in visitedURL and link not in frontier:
+                    frontier.append(link)
 
         
 def storePage(url, html):
