@@ -1,0 +1,160 @@
+[{
+  "_id": {
+    "$oid": "6561bef166b7f4ddb1cb1d8e"
+  },
+  "name": "Abdelfattah Amamra",
+  "title": "Associate Professor",
+  "office": "8-11",
+  "email": "aamamra@cpp.edu",
+  "website": "cpp.edu/faculty/aamamra/"
+},
+{
+  "_id": {
+    "$oid": "6561bef166b7f4ddb1cb1d8f"
+  },
+  "name": "Tingting Chen",
+  "title": "Professor",
+  "office": "8-09",
+  "email": "tingtingchen@cpp.edu",
+  "website": "cpp.edu/faculty/tingtingchen/"
+},
+{
+  "_id": {
+    "$oid": "6561bef166b7f4ddb1cb1d90"
+  },
+  "name": "Markus Eger",
+  "title": "Assistant Professor",
+  "office": "8-43",
+  "email": "meger@cpp.edu",
+  "website": "cpp.edu/faculty/meger/"
+},
+{
+  "_id": {
+    "$oid": "6561bef166b7f4ddb1cb1d91"
+  },
+  "name": "Mohammad Husain",
+  "title": "Professor & Graduate Coordinator",
+  "office": "8-41",
+  "email": "mihusain@cpp.edu",
+  "website": "cpp.edu/faculty/mihusain/"
+},
+{
+  "_id": {
+    "$oid": "6561bef166b7f4ddb1cb1d92"
+  },
+  "name": "Hao Ji",
+  "title": "Associate Professor",
+  "office": "8-42",
+  "email": "hji@cpp.edu",
+  "website": "cpp.edu/faculty/hji/"
+},
+{
+  "_id": {
+    "$oid": "6561bef166b7f4ddb1cb1d93"
+  },
+  "name": "John Korah",
+  "title": "Assistant Professor",
+  "office": "8-15",
+  "email": "jkorah@cpp.edu",
+  "website": "cpp.edu/faculty/jkorah/"
+},
+{
+  "_id": {
+    "$oid": "6561bef166b7f4ddb1cb1d94"
+  },
+  "name": "Ericsson Santana Marin",
+  "title": "Assistant Professor",
+  "office": "8-39",
+  "email": "santanamarin@cpp.edu",
+  "website": "cpp.edu/faculty/santanamarin"
+},
+{
+  "_id": {
+    "$oid": "6561bef166b7f4ddb1cb1d95"
+  },
+  "name": "Amar Raheja",
+  "title": "Associate Chair and Professor",
+  "office": "8-10",
+  "email": "raheja@cpp.edu",
+  "website": "cpp.edu/faculty/raheja/"
+},
+{
+  "_id": {
+    "$oid": "6561bef166b7f4ddb1cb1d96"
+  },
+  "name": "Salam Salloum",
+  "title": "Professor",
+  "office": "8-8",
+  "email": "ssalloum@cpp.edu",
+  "website": "cpp.edu/faculty/ssalloum/"
+},
+{
+  "_id": {
+    "$oid": "6561bef166b7f4ddb1cb1d97"
+  },
+  "name": "Ben Steichen",
+  "title": "Associate Professor",
+  "office": "8-44",
+  "email": "bsteichen@cpp.edu",
+  "website": "cpp.edu/faculty/bsteichen/"
+},
+{
+  "_id": {
+    "$oid": "6561bef166b7f4ddb1cb1d98"
+  },
+  "name": "Yu Sun",
+  "title": "Associate Professor",
+  "office": "8-13",
+  "email": "yusun@cpp.edu",
+  "website": "cpp.edu/faculty/yusun/"
+},
+{
+  "_id": {
+    "$oid": "6561bef166b7f4ddb1cb1d99"
+  },
+  "name": "Daisy Tang",
+  "title": "Chair and Professor",
+  "office": "8-14A",
+  "email": "ftang@cpp.edu",
+  "website": "cpp.edu/faculty/ftang/"
+},
+{
+  "_id": {
+    "$oid": "6561bef166b7f4ddb1cb1d9a"
+  },
+  "name": "Yunsheng Wang",
+  "title": "Assistant Professor",
+  "office": "8-47",
+  "email": "yunshengwang@cpp.edu",
+  "website": "cpp.edu/faculty/yunshengwang/"
+},
+{
+  "_id": {
+    "$oid": "6561bef166b7f4ddb1cb1d9b"
+  },
+  "name": "Mingyan Xiao",
+  "title": "Assistant Professor",
+  "office": "8-45",
+  "email": "mxiao@cpp.edu",
+  "website": "cpp.edu/faculty/mxiao/"
+},
+{
+  "_id": {
+    "$oid": "6561bef166b7f4ddb1cb1d9c"
+  },
+  "name": "Lan Yang",
+  "title": "Professor",
+  "office": "8-12",
+  "email": "lyang@cpp.edu",
+  "website": "cpp.edu/faculty/lyang/"
+},
+{
+  "_id": {
+    "$oid": "6561bef166b7f4ddb1cb1d9d"
+  },
+  "name": "Gilbert S. Young",
+  "title": "Professor",
+  "office": "8-14",
+  "email": "gsyoung@cpp.edu",
+  "website": "cpp.edu/faculty/gsyoung/"
+}]
