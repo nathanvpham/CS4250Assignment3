@@ -22,7 +22,7 @@ def main():
     frontier = ['https://www.cpp.edu/sci/computer-science/']
     visitedURL = []
     db = connectDataBase()
-    collection = db.documents
+    collection = db.pages
 
     while frontier:
         url = frontier.pop(0)
@@ -60,7 +60,7 @@ def connectDataBase():
 
     # Create a database connection object using pymongo
     # --> add your Python code here
-    DB_NAME = "pages"
+    DB_NAME = "facultydb"
     DB_HOST = "localhost"
     DB_PORT = 27017
 
